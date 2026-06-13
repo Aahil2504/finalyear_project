@@ -137,6 +137,12 @@ code {
   border-left: 4px solid var(--warning-color);
 }
 
+.alert-info {
+  background-color: #dbeafe;
+  color: #0c4a6e;
+  border-left: 4px solid var(--primary-color);
+}
+
 .grid {
   display: grid;
   gap: 1.5rem;
@@ -157,6 +163,7 @@ code {
   width: 40px;
   height: 40px;
   animation: spin 1s linear infinite;
+  margin: 2rem auto;
 }
 
 @keyframes spin {

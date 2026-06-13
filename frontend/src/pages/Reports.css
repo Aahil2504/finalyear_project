@@ -1,0 +1,97 @@
+.reports-page h1 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--dark-bg);
+}
+
+.filters-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filters-section .btn {
+  align-self: flex-end;
+}
+
+.table-container {
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.attendance-table thead {
+  background-color: var(--light-bg);
+  border-bottom: 2px solid var(--border-color);
+}
+
+.attendance-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: var(--dark-bg);
+}
+
+.attendance-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.attendance-table tbody tr:hover {
+  background-color: var(--light-bg);
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.status-present .status-badge {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.status-absent .status-badge {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.status-late .status-badge {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.no-data {
+  text-align: center;
+  color: #9ca3af;
+  padding: 2rem !important;
+}
+
+@media (max-width: 768px) {
+  .filters-section {
+    grid-template-columns: 1fr;
+  }
+
+  .table-container {
+    font-size: 0.875rem;
+  }
+
+  .attendance-table th,
+  .attendance-table td {
+    padding: 0.75rem 0.5rem;
+  }
+}

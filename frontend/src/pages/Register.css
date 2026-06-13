@@ -1,0 +1,62 @@
+.register-page h1 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--dark-bg);
+}
+
+.register-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.form-section,
+.camera-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2,
+.camera-section h2 {
+  margin-bottom: 1.5rem;
+  color: var(--dark-bg);
+  font-size: 1.25rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.button-group .btn {
+  flex: 1;
+  min-width: 120px;
+}
+
+.camera-placeholder {
+  background-color: var(--light-bg);
+  border: 2px dashed var(--border-color);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  font-size: 3rem;
+  color: #9ca3af;
+}
+
+.video-preview {
+  width: 100%;
+  border-radius: 0.5rem;
+  background-color: #000;
+}
+
+@media (max-width: 1024px) {
+  .register-container {
+    grid-template-columns: 1fr;
+  }
+}
